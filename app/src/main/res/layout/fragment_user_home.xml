@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textview"
+        android:layout_alignStart="@id/title_textview"
+        android:layout_marginTop="20sp"
+        android:queryHint="Search"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/rounded_border"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_below="@id/search_view">
+
+        <TextView
+            android:id="@+id/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legal Problems?"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:rowCount="3"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/republic_act"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Republic Acts"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@drawable/textview_container"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/exec_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Executive Orders"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/textview_container"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/pres_proc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Presidential Proclamation"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@drawable/textview_container"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/batas_pambansa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Batas Pambansa"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/textview_container"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/commonwealth_act"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Commonwealth Act"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@drawable/textview_container"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/placeholder00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Your Lawyers Now!"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="410dp"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lawyers_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeholder00"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+</RelativeLayout>

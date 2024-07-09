@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@color/cardview_dark_background">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center">
+
+            <ImageView
+              android:id="@+id/profile_image_view"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:src="@drawable/profile"
+              android:contentDescription="@string/profile_image"
+              android:layout_marginStart="15sp"
+              android:layout_marginTop="16dp" />
+
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="2"
+              android:layout_marginStart="15sp"
+              android:layout_marginTop="12dp"
+              android:orientation="vertical">
+
+                <TextView
+                  android:id="@+id/name_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:textColor="@color/white" />
+
+                <TextView
+                  android:id="@+id/id_number_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="8dp" />
+
+                <TextView
+                  android:id="@+id/role_text_view"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+          android:id="@+id/set_appointment_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Set Appointment"
+          android:layout_marginTop="10sp"
+          android:layout_marginStart="140sp" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="3dp"
+          android:background="@android:color/black"
+          android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:layout_width="210sp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A9A9A9"
+                android:text="Background"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:backgroundTint="@color/design_default_color_on_primary"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="680sp"
+          android:layout_marginTop="1dp"
+          android:alpha="0.8"
+          android:background="@drawable/bg2">
+
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/semi_transparent_background"
+              android:padding="30dp"
+              android:text="@string/lawyer"
+              android:textColor="@android:color/black"
+              android:layout_marginTop="15dp"
+              android:textSize="15sp"
+              android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

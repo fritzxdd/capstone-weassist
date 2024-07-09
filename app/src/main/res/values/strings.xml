@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeAssist</string>
+    <string name="simple_message">This is a simple message.</string>
+    <string name="about_we_assist">We Assist is an innovative online platform dedicated to providing accessible and reliable legal services. Our mission is to empower individuals and businesses by connecting them with experienced legal professionals who can offer expert guidance and support.
+
+With We Assist, you can:\n
+1. Access a wide range of legal services, including consultations, document drafting, and representation.\n \n
+2. Connect with vetted legal professionals who specialize in various fields of law.\n \n
+3. Receive personalized assistance tailored to your specific needs and circumstances.\n \n
+4. Streamline legal processes and minimize complexity through our user-friendly platform.\n \n
+    We Assist is here to help you navigate the complexities of the legal system with confidence and ease. \n</string>
+
+
+    <!-- Add more strings gradually -->
+    <string name="help_support_description">At We Assist, we are here to address any questions or concerns you may have regarding our services, legal processes, or any other related inquiries. Whether you need guidance on navigating our platform, understanding your legal rights, or seeking clarification on specific legal matters, we are here to help.
+
+    Our Help and Support section offers a wide range of resources and services to ensure that you receive the assistance you need, including:\n \n
+    1. Frequently Asked Questions (FAQs): Access a curated list of common queries and their answers to quickly find solutions to your concerns.\n \n
+    2. Live Chat Support: Connect with our support team in real-time through our live chat feature for immediate assistance and guidance.\n \n
+    3. Knowledge Base: Explore our extensive knowledge base to access articles, guides, and tutorials covering various legal topics and platform functionalities.\n \n
+    4. Email Support: Reach out to us via email at support@weassist.com for personalized assistance or to escalate any unresolved issues. \n</string>
+
+    <string name="app_name1">WeAssist</string>
+    <string name="profile_image">Profile Image</string>
+
+<string name="lawyer">\nBackground:
+\nA highly respected attorney specializing in corporate law, with over 15 years of experience in the legal field. Graduated magna cum laude from  Law School and quickly made a name  in the competitive world of corporate law.
+
+\n
+\nCareer Highlights:
+\nStarted the career at a prestigious law firm, where  focused on mergers and acquisitions.
+    \n
+\nAwards:\nReceived the "Lawyer of the Year"  award in  for its outstanding contributions to corporate law.
+
+\n
+\nCommunity Involvement:
+\nA dedicated to pro bono work and spends a significant amount of the time providing legal assistance to non-profit organizations.Particularly involved in causes related to environmental protection and corporate social responsibility, helping companies implement sustainable practices.
+
+</string>
+
+
+</resources>
+

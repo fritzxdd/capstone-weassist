@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+      android:id="@+id/textViewDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Date:"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+    <DatePicker
+      android:id="@+id/datePicker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textViewDate" />
+
+    <TextView
+      android:id="@+id/textViewTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/datePicker"
+      android:text="Time:"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+    <TimePicker
+      android:id="@+id/timePicker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textViewTime"
+      android:timePickerMode="spinner" />
+
+    <TextView
+      android:id="@+id/textViewDescription"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/timePicker"
+      android:text="Description:"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+    <EditText
+      android:id="@+id/editTextDescription"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textViewDescription"
+      android:inputType="text" />
+
+    <Button
+      android:id="@+id/buttonSave"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/editTextDescription"
+      android:text="Save"
+      android:layout_marginTop="16dp"/>
+
+    <Button
+      android:id="@+id/buttonCancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/buttonSave"
+      android:text="Cancel"
+      android:layout_marginTop="8dp"/>
+
+
+  </RelativeLayout>
+
+</ScrollView>

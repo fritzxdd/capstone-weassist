@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="150sp"
+      android:layout_alignParentTop="true"
+      android:background="#40679E"/>
+
+    <TextView
+      android:id="@+id/title_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Welcome!"
+      android:textSize="30sp"
+      android:fontFamily="sans-serif-condensed-medium"
+      android:textColor="@android:color/white"
+      android:layout_marginTop="20sp"
+      android:layout_marginStart="20sp"/>
+
+    <ImageButton
+      android:id="@+id/hamburger_icon"
+      android:layout_width="70sp"
+      android:layout_height="70sp"
+      android:layout_marginStart="300dp"
+      android:layout_marginTop="5sp"
+
+      android:background="@null"
+      android:padding="15sp"
+      android:src="@drawable/acc_prof"
+      android:clickable="true"
+      android:focusable="true" />
+
+    <SearchView
+      android:id="@+id/search_view"
+      android:layout_width="325dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/title_textview"
+      android:layout_alignStart="@id/title_textview"
+      android:layout_marginTop="20sp"
+      android:queryHint="Search"
+      android:iconifiedByDefault="false"
+      android:background="@drawable/rounded_backround"
+      android:clickable="true"
+      android:focusable="true" />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/placeholder"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Legal Problems?"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="150dp"
+          android:textStyle="bold"
+          android:textSize="30sp" />
+
+        <GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:columnCount="2"
+          android:layout_marginTop="20sp"
+          android:layout_marginStart="10sp"
+          android:layout_marginEnd="10sp"
+          android:rowCount="3"
+          android:layout_gravity="center">
+
+            <TextView
+              android:id="@+id/republic_act"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_rowSpan="1"
+              android:layout_columnSpan="1"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:text="Republic Acts"
+              android:layout_margin="5dp"
+              android:padding="15dp"
+              android:background="@drawable/textview_container"
+              android:textStyle="bold"
+              android:autoLink="web"
+              android:clickable="true"
+              android:gravity="center"
+              android:textColor="@android:color/white" />
+
+            <TextView
+              android:id="@+id/exec_order"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_rowSpan="1"
+              android:layout_columnSpan="1"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:text="Executive Orders"
+              android:layout_margin="5dp"
+              android:padding="10dp"
+              android:background="@drawable/textview_container"
+              android:textStyle="bold"
+              android:autoLink="web"
+              android:clickable="true"
+              android:gravity="center"
+              android:textColor="@android:color/white" />
+
+            <TextView
+              android:id="@+id/pres_proc"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_rowSpan="1"
+              android:layout_columnSpan="1"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:text="Presidential Proclamation"
+              android:layout_margin="5dp"
+              android:padding="15dp"
+              android:background="@drawable/textview_container"
+              android:textStyle="bold"
+              android:autoLink="web"
+              android:clickable="true"
+              android:gravity="center"
+              android:textColor="@android:color/white" />
+
+            <TextView
+              android:id="@+id/batas_pambansa"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_rowSpan="1"
+              android:layout_columnSpan="1"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:text="Batas Pambansa"
+              android:layout_margin="5dp"
+              android:padding="10dp"
+              android:background="@drawable/textview_container"
+              android:textStyle="bold"
+              android:autoLink="web"
+              android:clickable="true"
+              android:gravity="center"
+              android:textColor="@android:color/white" />
+
+            <TextView
+              android:id="@+id/commonwealth_act"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_rowSpan="1"
+              android:layout_columnSpan="2"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:text="Commonwealth Act"
+              android:layout_margin="5dp"
+              android:padding="15dp"
+              android:background="@drawable/textview_container"
+              android:textStyle="bold"
+              android:autoLink="web"
+              android:clickable="true"
+              android:gravity="center"
+              android:textColor="@android:color/white" />
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/placeholder_layout"
+      android:layout_width="350sp"
+      android:layout_height="250sp"
+      android:layout_below="@id/search_view"
+      android:layout_marginTop="290dp"
+      android:layout_centerHorizontal="true"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+
+        <LinearLayout
+          android:id="@+id/date_picker_layout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="30dp"
+          android:padding="3dp"
+          android:orientation="vertical"
+          android:gravity="center">
+
+            <ImageView
+              android:layout_width="500sp"
+              android:layout_height="600dp"
+              android:src="@drawable/serve"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
